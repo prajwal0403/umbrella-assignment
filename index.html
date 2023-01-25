@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="loader">
+        <div class="loader-icon">
+          <img
+            id="loader-icon"
+            src="./loader_icon.svg"
+            alt="loader"
+            class="rotation hide"
+            width="100%"
+          />
+        </div>
+        <div id="umbrella-container">
+          <div id="umbrella">
+            <img id="umbrella-img" src="./Blue umbrella.png" width="100%" />
+          </div>
+          <div id="upload-img-div">
+            <img id="upload-img" class="hide" />
+          </div>
+        </div>
+      </div>
+      <div class="text-container">
+        <div><h1>Custom Umbrella</h1></div>
+        <button
+          class="round round-blue"
+          onclick="chooseUmbrella('Blue')"
+        ></button>
+        <button
+          class="round round-pink"
+          onclick="chooseUmbrella('Pink')"
+        ></button>
+        <button
+          class="round round-yellow"
+          onclick="chooseUmbrella('Yellow')"
+        ></button>
+        <h3 style="line-height: 2%; font-weight: bold; margin-top: 10%">
+          Customize your umbrella
+        </h3>
+        <h4 style="font-weight: 300; line-height: 35%">
+          Upload a logo for an instant preview.
+        </h4>
+        <p style="font-weight: 300">
+          <small>.png and .jpg files only. Max file size is 5MB.</small>
+        </p>
+        <button id="upload-btn" class="upload">
+          <label for="upload-text">
+            <img class="upload-icon" src="./upload_icon.svg" alt="upload" />
+          </label>
+          <input
+            id="upload-text"
+            type="file"
+            style="display: none; visibility: none"
+            onchange="upload(this.value)"
+          />
+          <label for="upload-text" id="logo-text" class="upload-text"
+            >UPLOAD LOGO</label
+          >
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>

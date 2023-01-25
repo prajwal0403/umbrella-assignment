@@ -1,0 +1,106 @@
+.blue {
+  filter: invert(47%) sepia(51%) saturate(4118%) hue-rotate(168deg)
+    brightness(100%) contrast(101%);
+}
+.pink {
+  filter: invert(71%) sepia(7%) saturate(1351%) hue-rotate(302deg)
+    brightness(110%) contrast(110%);
+}
+.yellow {
+  filter: invert(91%) sepia(42%) saturate(1298%) hue-rotate(321deg)
+    brightness(102%) contrast(99%);
+}
+.blue-bg {
+  background-color: #e6f6fc !important;
+}
+.yellow-bg {
+  background-color: #faf1dc !important;
+}
+.pink-bg {
+  background-color: #f8e8f2 !important;
+}
+.rotation {
+  animation: rotate 5s infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-icon {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin-left: 15%;
+  margin-top: 12%;
+}
+#container {
+  background-color: #e6f6fc;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  height: 550px;
+  width: 1000px;
+}
+#umbrella {
+  width: 400px;
+  position: relative;
+}
+.upload {
+  width: 300px;
+  display: flex;
+  border: none;
+  color: white;
+  background-color: deepskyblue;
+}
+.upload-icon {
+  filter: invert(90%) sepia(99%) saturate(29%) hue-rotate(248deg)
+    brightness(106%) contrast(100%);
+  padding: 5px;
+  position: relative;
+}
+.upload-text {
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-container {
+  margin-left: 20%;
+  margin-top: 12%;
+}
+.round-blue {
+  background-color: deepskyblue;
+  cursor: pointer;
+}
+.round-pink {
+  background-color: pink;
+  cursor: pointer;
+}
+.round-yellow {
+  background-color: gold;
+  cursor: pointer;
+}
+.round {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: none;
+}
+.hide {
+  display: none !important;
+}
+#upload-img {
+  position: absolute;
+  left: 35%;
+  top: 65%;
+  width: 4rem;
+  height: 20px;
+}
+#umbrella-img {
+  margin: 25%;
+}
+* {
+  font-family: sans-serif;
+}
